@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Selection with Dynamic Dropdowns</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="header">
+          <div class="line"></div>
+          <h1 class="title">YAY! It’s BOGO</h1>
+          <div class="line"></div>
+        </div>
+      </div>
+        <!-- 1 Unit -->
+        <div class="unit-1-container">
+          <label class="unit-option" for="unit1">
+            <div class="unit-left">
+              <input
+                type="radio"
+                id="unit1"
+                name="unit"
+                checked
+                onclick="showDropdowns(1)"
+              />
+              <div class="unit-details">
+                <div class="unit-title">
+                  1 Unit
+
+                  <span class="badge-offer">10% Off</span>
+                </div>
+                <!-- <span class="badge-small">Manoj</span> -->
+                <div class="unit-subtext">Standard Price</div>
+              </div>
+            </div>
+            <div class="unit-right">
+              <div class="price">$10.00 USD</div>
+              <div class="price-old">$24.00 USD</div>
+            </div>
+          </label>
+          <div id="dropdowns-1" class="dropdowns">
+            <div class="dropdown-row">
+              <span class="dropdown-label-1">#1</span>
+              <label>
+                <p class="size">Size</p>
+                <div class="custom-select">
+                   <select>
+                     <option>S</option>
+                     <option>M</option>
+                     <option>L</option>
+                   </select>
+                   <span class="arrow-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor">
+                       <path d="M7 10l5 5 5-5z" />
+                     </svg>
+                   </span>
+                </div>
+              </label>
+              <label>
+                <p class="color">Color</p>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Unit -->
+        <div class="unit-2-container">
+          <label class="unit-option" for="unit2">
+            <div class="unit-left">
+              <input
+                type="radio"
+                id="unit2"
+                name="unit"
+                onclick="showDropdowns(2)"
+              />
+              <div class="unit-details">
+                <div class="unit-title">
+                  2 Unit
+                  <span class="badge-offer">20% Off</span>
+                </div>
+              </div>
+            </div>
+            <div class="unit-right">
+              <div class="price">$18.00 USD</div>
+              <div class="price-old">$24.00 USD</div>
+            </div>
+            <div class="most-popular">MOST POPULAR</div>
+          </label>
+
+          <div id="dropdowns-2" class="dropdowns hidden">
+            <div class="dropdown-row">
+              <span class="dropdown-label-1">#1</span>
+              <label>
+                <p class="size">Size</p>
+                <div class="custom-select">
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+              <label>
+                <p class="color">Color</p>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div class="dropdown-row">
+              <span class="dropdown-label">#2</span>
+              <label>
+                <div class="custom-select">
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+              <label>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Unit -->
+        <div class="unit-3-container">
+          <label class="unit-option" for="unit3">
+            <div class="unit-left">
+              <input
+                type="radio"
+                id="unit3"
+                name="unit"
+                onclick="showDropdowns(3)"
+              />
+              <div class="unit-details">
+                <div class="unit-title">
+                  3 Unit
+                  <span class="badge-offer">30% Off</span>
+                </div>
+              </div>
+            </div>
+            <div class="unit-right">
+              <div class="price">$24.00 USD</div>
+              <div class="price-old">$24.00 USD</div>
+            </div>
+          </label>
+
+          <div id="dropdowns-3" class="dropdowns hidden">
+            <div class="dropdown-row">
+              <span class="dropdown-label-1">#1</span>
+              <label>
+                <p class="size">Size</p>
+                <div class="custom-select">
+                    <select>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                    </select>
+                    <span class="arrow-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z" />
+                      </svg>
+                    </span>
+                </div>
+              </label>
+              <label>
+                <p class="color">Color</p>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div class="dropdown-row">
+              <span class="dropdown-label">#2</span>
+              <label>
+                <div class="custom-select">
+                   <select>
+                     <option>S</option>
+                     <option>M</option>
+                     <option>L</option>
+                   </select>
+                   <span class="arrow-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor">
+                       <path d="M7 10l5 5 5-5z" />
+                     </svg>
+                   </span>
+                </div>
+              </label>
+              <label>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div class="dropdown-row">
+              <span class="dropdown-label">#3</span>
+              <label>
+                <div class="custom-select">
+                   <select>
+                     <option>S</option>
+                     <option>M</option>
+                     <option>L</option>
+                   </select>
+                   <span class="arrow-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor">
+                       <path d="M7 10l5 5 5-5z" />
+                     </svg>
+                   </span>
+                </div>
+              </label>
+              <label>
+                <div class="custom-select">
+                  <select>
+                    <option>Color</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                    <option>Purple</option>
+                  </select>
+                  <span class="arrow-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      width="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 10l5 5 5-5z" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      <div class="delivery-content">
+        <div class="delivery">
+          <p>Free Delivery</p>
+        </div>
+
+        <div class="price">
+          <p>Total: <span id="total-price">$18.00</span> USD</p>
+        </div>
+      </div>
+
+      <button id="add-to-cart">
+        <span class="plus-sign">+</span> Add to Cart
+      </button>
+      <p class="footer">@ Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
